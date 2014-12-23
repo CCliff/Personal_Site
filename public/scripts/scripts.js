@@ -22,9 +22,19 @@ Path.rescue(function(){
 
 $(function(){
 
-  /*--------------------------Start PathJS Router--------------------------- */
+  /*-----------------------Start PathJS Router------------------------- */
   Path.listen();
-  /*--------------------------/Start PathJS Router-------------------------- */
+  /*----------------------/Start PathJS Router------------------------- */
+
+  /*------------------------Mobile Navigation-------------------------- */
+  $('#mob-nav').on('click', function(){
+    $('nav').toggleClass('show');
+    var that = this;
+    setTimeout(function(){
+      $(that).children('i').toggleClass('fa-bars fa-arrow-right');
+    }, 250);
+  });
+  /*-----------------------/Mobile Navigation-------------------------- */
 
 });
 

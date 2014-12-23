@@ -1,1 +1,87 @@
-styles.css
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  max-width: 100%;
+  overflow: hidden; }
+
+body {
+  background: #64d99c;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #64d99c 46%, #2fbabf 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #64d99c), color-stop(100%, #2fbabf));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #64d99c 46%, #2fbabf 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #64d99c 46%, #2fbabf 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #64d99c 46%, #2fbabf 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #64d99c 46%, #2fbabf 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64d99c', endColorstr='$color-2',GradientType=0 );
+  /* IE6-9 */ }
+
+nav {
+  position: relative;
+  right: calc(-100% + 48px);
+  height: 48px;
+  opacity: .8;
+  transition: right .5s; }
+  nav .show {
+    right: 48px; }
+  nav .links {
+    width: 85%;
+    float: left;
+    border-bottom-left-radius: 6px;
+    overflow: hidden; }
+  nav ul {
+    position: relative;
+    background: #64d99c;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-shadow: 1px 1px 2px #554c59; }
+  nav a {
+    color: #f2efe0; }
+  nav li {
+    padding: 15px 20px;
+    font-weight: bold; }
+  nav i {
+    margin: 0 10px; }
+
+ul::after {
+  content: '';
+  background-image: url("/images/nav-tex.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.25;
+  box-shadow: 0px 0px 4px black; }
+
+#mob-nav {
+  text-align: center;
+  opacity: .6;
+  cursor: pointer;
+  float: left;
+  width: 15%;
+  min-height: 48px; }
+  #mob-nav i {
+    font-size: 2em;
+    text-align: center;
+    line-height: 48px; }
+
+.show {
+  right: 0; }
+
+.watermark {
+  font-size: 24em;
+  position: fixed;
+  bottom: -151px;
+  left: -178px;
+  opacity: 0.13;
+  text-shadow: 7px 7px 20px black; }

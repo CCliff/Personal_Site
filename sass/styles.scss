@@ -1,0 +1,102 @@
+$color-1: #64D99C;
+$color-2: #2FBABF;
+$color-3: #5E658C;
+$color-4: #554C59;
+$color-5: #F2EFE0;
+
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+body{
+  background: $color-1; /* Old browsers */
+  background: -moz-linear-gradient(top, $color-1 46%, $color-2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,$color-1), color-stop(100%,$color-2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $color-1 46%,$color-2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $color-1 46%,$color-2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $color-1 46%,$color-2 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $color-1 46%,$color-2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64d99c', endColorstr='$color-2',GradientType=0 ); /* IE6-9 */
+}
+
+nav{
+  position : relative;
+  right: calc(-100% + 48px);
+  height: 48px;
+  opacity: .8;
+  transition: right .5s;
+  .show{
+    right: 48px;
+  }
+
+  .links {
+    width: 85%;
+    float: left;
+    border-bottom-left-radius: 6px;
+    overflow: hidden;
+  }
+
+  ul{
+    position: relative;;
+    background: $color-1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-shadow: 1px 1px 2px $color-4;
+  }
+  a{
+    color: $color-5;
+  }
+  li{
+    padding: 15px 20px;
+    font-weight: bold;
+  }
+  i {
+    margin: 0 10px;
+  }
+}
+
+ul::after {
+  content: '';
+  background-image: url("/images/nav-tex.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.25;
+  box-shadow: 0px 0px 4px black;
+}
+
+#mob-nav{
+  text-align: center;
+  opacity: .6;
+  cursor: pointer;
+  float: left;
+  width: 15%;
+  min-height: 48px;
+  i {
+    font-size: 2em;
+    text-align: center;
+    line-height: 48px;
+  }
+}
+
+.show{
+  right: 0;
+}
+
+.watermark {
+  font-size: 24em;
+  position: fixed;
+  bottom: -151px;
+  left: -178px;
+  opacity: 0.13;
+  text-shadow: 7px 7px 20px black;
+}
