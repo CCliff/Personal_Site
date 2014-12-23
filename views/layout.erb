@@ -13,10 +13,9 @@
   <script type="text/javascript" src="/scripts/lib/path.min.js"></script>
 </head>
 <body>
+  <%= erb :'partials/_navigation' %>
   <div class="container">  
-    <%= erb :'partials/_navigation' %>
     <%= yield %>
-    <i class="fa fa-cog watermark"></i>
   </div>
 
   <script type="text/javascript" src="/scripts/scripts.js"></script>
