@@ -29,6 +29,7 @@ $(function(){
   /*------------------------Mobile Navigation-------------------------- */
   $('#mob-nav').on('click', function(){
     $('nav').toggleClass('show');
+    $('.header h1').toggleClass('menu-open');
     var that = this;
     setTimeout(function(){
       $(that).children('i').toggleClass('fa-bars fa-arrow-right');
@@ -36,9 +37,15 @@ $(function(){
   });
   /*-----------------------/Mobile Navigation-------------------------- */
 
+  /*------------------------Header Stickiness-------------------------- */
 
-  /*----------------------Set height of Intro-------------------------- */
-  /*---------------------/Set height of Intro-------------------------- */
+  var vh = $('.intro').height();
+  $(window).on('scroll', function(){
+    var fromTop = $('body').scrollTop();
+    $('.about-me .header').toggleClass('top', (fromTop > vh));
+  });
+
+  /*-----------------------/Header Stickiness-------------------------- */
 
 });
 

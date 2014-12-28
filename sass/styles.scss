@@ -1,8 +1,8 @@
-$color-1: #64D99C;
-$color-2: #2FBABF;
-$color-3: #5E658C;
-$color-4: #554C59;
-$color-5: #F2EFE0;
+$color-1: #94C4F4;
+$color-2: #0092B2;
+$color-3: #FFCA3D;
+$color-4: #B70000;
+$color-5: #F2EBDE;
 
 html{
   height: 100%;
@@ -14,10 +14,15 @@ body{
   font-weight: 300;
   height: 100%;
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+h2{
+  margin:5px 0px;
 }
 
 nav{
+  z-index: 1000;
   position: fixed;
   left: calc(100% - 48px);
   width: 100%;
@@ -41,19 +46,23 @@ nav{
     margin: 0;
     padding: 0;
     list-style: none;
-    text-shadow: 1px 1px 2px $color-4;
+    text-shadow: 1px 1px 2px black;
   }
+
   a{
     color: $color-5;
     text-decoration: none;
   }
+
   li{
     padding: 15px 20px;
     font-weight: bold;
   }
+
   i {
     margin: 0 10px;
   }
+
 }
 
 ul::after {
@@ -75,12 +84,15 @@ ul::after {
   float: left;
   width: 48px;
   min-height: 48px;
+
   i {
     font-size: 2em;
     text-align: center;
     line-height: 48px;
     text-shadow: 1px 1px 2px black;
+    padding: 3px;
   }
+
 }
 
 .show{
@@ -108,7 +120,7 @@ ul::after {
 .type {
   width: 100%;
   max-width: 320px;
-  padding: 48px 0;
+  padding: 25% 0;
   max-height: 50%;
 }
 
@@ -116,11 +128,43 @@ ul::after {
   font-weight: bold;
 }
 
-.watermark {
-  font-size: 8em;
+.about-me{
+  margin:80px 5px 5px;
+  color: #444;
+}
+
+.header{
+  position: absolute;
+  left: 0;
+  background-color: $color-4;
+  min-height: 2.5em;
+  line-height: 3em;
+  box-shadow: 0px 0px 10px #666;
+  margin-top: -75px;
+  width: 100%;
+
+  h1{
+    color: $color-5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    position: relative;
+    left: 0;
+    transition: left .5s;
+  }
+
+}
+
+.header .menu-open{
+  left: -100%;
+}
+
+.top {
   position: fixed;
-  bottom: -151px;
-  left: -178px;
-  opacity: 0.13;
-  text-shadow: 4px 4px 6px #CCC;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  border-top: 5px solid $color-5;
 }
