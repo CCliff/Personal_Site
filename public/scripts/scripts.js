@@ -22,7 +22,7 @@ Path.rescue(function(){
 
 $(function(){
 
-  $('html').height(window.screen.height);
+  $('.intro').height($(window).height());
 
   /*-----------------------Start PathJS Router------------------------- */
   Path.listen();

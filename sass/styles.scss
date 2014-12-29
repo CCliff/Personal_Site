@@ -5,6 +5,7 @@ $color-4: #B70000;
 $color-5: #F2EBDE;
 
 html{
+  height: 100%;
 }
 
 body{
@@ -103,7 +104,6 @@ ul::after {
 }
 
 .intro{
-  height: 100%;
   font-size: 3em;
   overflow: hidden;
   background: $color-1; /* Old browsers */
