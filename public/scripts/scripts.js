@@ -22,6 +22,8 @@ Path.rescue(function(){
 
 $(function(){
 
+  $('html').height(window.screen.height);
+
   /*-----------------------Start PathJS Router------------------------- */
   Path.listen();
   /*----------------------/Start PathJS Router------------------------- */
