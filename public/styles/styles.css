@@ -39,7 +39,7 @@ nav {
   nav i {
     margin: 0 10px; }
 
-ul::after {
+nav ul::after {
   content: '';
   background-image: url("/images/nav-tex.png");
   position: absolute;
@@ -97,8 +97,20 @@ ul::after {
   font-weight: bold; }
 
 .about-me {
-  margin: 80px 5px 5px;
-  color: #444; }
+  position: relative;
+  padding: 75px 5px 5px;
+  color: black;
+  background-color: #f2ebde; }
+
+.about-me::after {
+  content: '';
+  background-image: url("/images/paper-tex.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.15; }
 
 .header {
   position: absolute;
@@ -108,13 +120,14 @@ ul::after {
   line-height: 3em;
   box-shadow: 0px 0px 10px #666;
   margin-top: -75px;
-  width: 100%; }
+  width: 100%;
+  border-top: 5px solid #f2ebde; }
   .header h1 {
     color: #f2ebde;
     margin: 0;
     padding: 0;
     text-align: center;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 1px black;
     position: relative;
     left: 0;
     transition: left .5s; }
@@ -127,5 +140,4 @@ ul::after {
   top: 0;
   left: 0;
   width: 100%;
-  margin: 0;
-  border-top: 5px solid #f2ebde; }
+  margin: 0; }

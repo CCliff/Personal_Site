@@ -62,7 +62,7 @@ nav{
 
 }
 
-ul::after {
+nav ul::after {
   content: '';
   background-image: url("/images/nav-tex.png");
   position: absolute;
@@ -96,9 +96,6 @@ ul::after {
   left: 0;
 }
 
-.container {
-}
-
 .intro{
   font-size: 3em;
   overflow: hidden;
@@ -124,8 +121,21 @@ ul::after {
 }
 
 .about-me{
-  margin:80px 5px 5px;
-  color: #444;
+  position: relative;
+  padding:75px 5px 5px;
+  color: black;
+  background-color: $color-5;
+}
+
+.about-me::after {
+  content: '';
+  background-image: url("/images/paper-tex.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.15;
 }
 
 .header{
@@ -137,13 +147,13 @@ ul::after {
   box-shadow: 0px 0px 10px #666;
   margin-top: -75px;
   width: 100%;
-
+  border-top: 5px solid $color-5;
   h1{
     color: $color-5;
     margin: 0;
     padding: 0;
     text-align: center;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 1px black;
     position: relative;
     left: 0;
     transition: left .5s;
@@ -161,5 +171,4 @@ ul::after {
   left: 0;
   width: 100%;
   margin: 0;
-  border-top: 5px solid $color-5;
 }
