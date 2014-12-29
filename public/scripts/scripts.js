@@ -22,7 +22,9 @@ Path.rescue(function(){
 
 $(function(){
 
+  /*--------------------Calculate First Div Height--------------------- */
   $('.intro').height($(window).height());
+  /*-------------------/Calculate First Div Height--------------------- */
 
   /*-----------------------Start PathJS Router------------------------- */
   Path.listen();
@@ -40,14 +42,26 @@ $(function(){
   /*-----------------------/Mobile Navigation-------------------------- */
 
   /*------------------------Header Stickiness-------------------------- */
-
   var vh = $('.intro').height();
   $(window).on('scroll', function(){
     var fromTop = $('body').scrollTop();
     $('.about-me .header').toggleClass('top', (fromTop > vh));
   });
-
   /*-----------------------/Header Stickiness-------------------------- */
+
+
+  /*------------------------Scroll to Header--------------------------- */
+  $('a[href^="#"').on('click', function(e){
+    e.preventDefault();
+
+    var target = this.hash;
+    var $target = $(target);
+
+    $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 750, 'swing');
+  });
+  /*-----------------------/Scroll to Header--------------------------- */
 
 });
 

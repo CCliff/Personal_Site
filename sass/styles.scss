@@ -43,7 +43,8 @@ nav{
     margin: 0;
     padding: 0;
     list-style: none;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 1px black;
+    z-index: 1;
   }
 
   a{
@@ -72,6 +73,7 @@ nav ul::after {
   bottom: 0;
   opacity: 0.25;
   box-shadow: 0px 0px 4px black;
+  z-index: -1;
 }
 
 #mob-nav{
@@ -86,7 +88,7 @@ nav ul::after {
     font-size: 2em;
     text-align: center;
     line-height: 48px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 1px black;
     padding: 3px;
   }
 

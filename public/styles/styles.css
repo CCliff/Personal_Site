@@ -29,7 +29,8 @@ nav {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-shadow: 1px 1px 2px black; }
+    text-shadow: 1px 1px 1px black;
+    z-index: 1; }
   nav a {
     color: #f2ebde;
     text-decoration: none; }
@@ -48,7 +49,8 @@ nav ul::after {
   right: 0;
   bottom: 0;
   opacity: 0.25;
-  box-shadow: 0px 0px 4px black; }
+  box-shadow: 0px 0px 4px black;
+  z-index: -1; }
 
 #mob-nav {
   text-align: center;
@@ -61,7 +63,7 @@ nav ul::after {
     font-size: 2em;
     text-align: center;
     line-height: 48px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 1px black;
     padding: 3px; }
 
 .show {
