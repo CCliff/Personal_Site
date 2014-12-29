@@ -5,14 +5,11 @@ $color-4: #B70000;
 $color-5: #F2EBDE;
 
 html{
-  height: 100%;
 }
 
 body{
   color: $color-5;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
-  height: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -100,7 +97,6 @@ ul::after {
 }
 
 .container {
-  height: 100%;
 }
 
 .intro{
