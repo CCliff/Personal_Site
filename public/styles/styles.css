@@ -1,8 +1,12 @@
 body {
-  color: #f2ebde;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
   max-width: 100%;
   overflow-x: hidden; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'PT Sans', sans-serif; }
 
 h2 {
   margin: 5px 0px; }
@@ -14,27 +18,28 @@ nav {
   width: 100%;
   top: 0;
   height: 48px;
-  opacity: 0.85;
   transition: left .5s; }
   nav .links {
-    width: 100%;
+    width: calc(100% - 48px);
     margin-right: -48px;
     float: left;
-    border-bottom-left-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px #666; }
+    /*    border-bottom-left-radius: 6px;*/
+    overflow: hidden; }
   nav ul {
     position: relative;
     background: #94c4f4;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-shadow: 1px 1px 1px black;
     z-index: 1; }
   nav a {
-    color: #f2ebde;
+    color: white;
     text-decoration: none; }
+  nav li.home {
+    text-align: center;
+    font-style: italic; }
   nav li {
+    border-bottom: 1px solid;
     padding: 15px 20px;
     font-weight: bold; }
   nav i {
@@ -42,19 +47,15 @@ nav {
 
 nav ul::after {
   content: '';
-  background-image: url("/images/nav-tex.png");
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.25;
-  box-shadow: 0px 0px 4px black;
   z-index: -1; }
 
 #mob-nav {
   text-align: center;
-  opacity: .6;
   cursor: pointer;
   float: left;
   width: 48px;
@@ -63,31 +64,34 @@ nav ul::after {
     font-size: 2em;
     text-align: center;
     line-height: 48px;
-    text-shadow: 2px 2px 1px black;
     padding: 3px; }
 
 .show {
   left: 0; }
 
 .intro {
-  font-size: 3em;
-  overflow: hidden;
-  background: #94c4f4;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #94c4f4 46%, #0092b2 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #94c4f4), color-stop(100%, #0092b2));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #94c4f4 46%, #0092b2 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #94c4f4 46%, #0092b2 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #94c4f4 46%, #0092b2 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #94c4f4 46%, #0092b2 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64d99c', endColorstr='$color-2',GradientType=0 );
-  /* IE6-9 */ }
+  background: white;
+  min-height: 100%;
+  overflow: hidden; }
+  .intro .personal-info {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(100% - 48px);
+    min-height: 50%; }
+    .intro .personal-info .name h1 {
+      margin: 0; }
+    .intro .personal-info .title-wrapper {
+      color: white;
+      background-color: #94c4f4;
+      width: 100%;
+      height: 500px; }
+      .intro .personal-info .title-wrapper .title {
+        padding-left: 5px; }
+      .intro .personal-info .title-wrapper h2 {
+        margin: 0;
+        padding: 5px 0px 0px;
+        border-bottom: 3px solid white; }
 
 .type {
   width: 100%;
@@ -101,12 +105,12 @@ nav ul::after {
 .about-me {
   position: relative;
   padding: 75px 5px 5px;
-  color: black;
-  background-color: #f2ebde; }
+  color: #666;
+  background-color: #ffca3d; }
 
 .about-me::after {
   content: '';
-  background-image: url("/images/paper-tex.png");
+  /*  background-image: url("/images/paper-tex.png");*/
   position: absolute;
   top: 0;
   left: 0;
@@ -117,19 +121,18 @@ nav ul::after {
 .header {
   position: absolute;
   left: 0;
-  background-color: #b70000;
+  background-color: #94c4f4;
   min-height: 2.5em;
   line-height: 3em;
   box-shadow: 0px 0px 10px #666;
   margin-top: -75px;
-  width: 100%;
-  border-top: 5px solid #f2ebde; }
+  width: 100%; }
   .header h1 {
-    color: #f2ebde;
+    border-bottom: 5px solid white;
+    color: white;
     margin: 0;
     padding: 0;
     text-align: center;
-    text-shadow: 2px 2px 1px black;
     position: relative;
     left: 0;
     transition: left .5s; }
