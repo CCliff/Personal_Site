@@ -24,6 +24,7 @@ $(function(){
 
   /*--------------------Calculate First Div Height--------------------- */
   $('.intro').height($(window).height());
+  $('.intro .personal-info').css('top', $(window).height()/2);
   /*-------------------/Calculate First Div Height--------------------- */
 
   /*-----------------------Start PathJS Router------------------------- */
