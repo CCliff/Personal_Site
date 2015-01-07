@@ -74,10 +74,15 @@ nav{
     text-align: center;
     font-style: italic;
   }
+  li.active{
+    background-color: $color-2;
+    transition: background-color .4s;
+  }
   li{
     border-bottom: 1px solid;
     padding: 15px 20px;
     font-weight: bold;
+    transition: background-color .4s;
   }
   i {
     margin: 0 10px;

@@ -54,10 +54,14 @@ nav {
   nav li.home {
     text-align: center;
     font-style: italic; }
+  nav li.active {
+    background-color: #3084a3;
+    transition: background-color .4s; }
   nav li {
     border-bottom: 1px solid;
     padding: 15px 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: background-color .4s; }
   nav i {
     margin: 0 10px; }
 
