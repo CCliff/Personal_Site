@@ -182,7 +182,7 @@ nav ul::after {
 .header{
   position: absolute;
   left: 0;
-  background-color: $color-1;
+  background-color: $color-5;
   min-height: 2.5em;
   line-height: 3em;
   box-shadow: 0px 0px 10px #666;
@@ -190,8 +190,8 @@ nav ul::after {
   width: 100%;
   z-index: 1;
   h1{
-    border-bottom: 5px solid $color-2;
-    color: $color-5;
+    border-bottom: 5px solid $color-1;
+    color: $color-1;
     margin: 0;
     padding: 0;
     text-align: center;
