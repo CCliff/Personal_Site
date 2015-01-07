@@ -1,8 +1,8 @@
-$color-1: #94C4F4;
-$color-2: #0092B2;
+$color-1: #2C697C;
+$color-2: #3084A3;
 $color-3: #FFCA3D;
 $color-4: #B70000;
-$color-5: #F2EBDE;
+$color-5: white;
 
 html{
 }
@@ -23,6 +23,24 @@ h2{
   margin:5px 0px;
 }
 
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double $color-1;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+  color: $color-1;
+  content: "ll";
+  display: inline-block;
+  position: relative; 
+  top: -0.7em;  
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+
 nav{
   z-index: 1000;
   position: fixed;
@@ -36,7 +54,6 @@ nav{
     width: calc(100% - 48px);
     margin-right: -48px;
     float: left;
-/*    border-bottom-left-radius: 6px;*/
     overflow: hidden;
   }
 
@@ -50,7 +67,7 @@ nav{
   }
 
   a{
-    color: white;
+    color: $color-5;
     text-decoration: none;
   }
   li.home{
@@ -99,7 +116,7 @@ nav ul::after {
 }
 
 .intro{
-  background: white;
+  background: $color-5;
   min-height: 100%;
   overflow: hidden;
   .personal-info{
@@ -108,6 +125,7 @@ nav ul::after {
     right: 0;
     width: calc(100% - 48px);
     min-height: 50%;
+    z-index: 1;
     .name h1{
       margin: 0;
     }
@@ -122,10 +140,22 @@ nav ul::after {
       h2{
         margin: 0;
         padding: 5px 0px 0px;
-        border-bottom: 3px solid white
+        border-bottom: 3px solid $color-2;
       }
     }
   }
+}
+
+.intro::after {
+  content: '';
+  background-image: url("/images/background.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.05;
+  z-index: 0;
 }
 
 
@@ -145,18 +175,8 @@ nav ul::after {
   position: relative;
   padding:75px 5px 5px;
   color: #666;
-  background-color: $color-3;
-}
-
-.about-me::after {
-  content: '';
-/*  background-image: url("/images/paper-tex.png");*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.15;
+  background-color: $color-5;
+  z-index: 2;
 }
 
 .header{
@@ -168,9 +188,10 @@ nav ul::after {
   box-shadow: 0px 0px 10px #666;
   margin-top: -75px;
   width: 100%;
+  z-index: 1;
   h1{
-    border-bottom: 5px solid white;
-    color: white;
+    border-bottom: 5px solid $color-2;
+    color: $color-5;
     margin: 0;
     padding: 0;
     text-align: center;
