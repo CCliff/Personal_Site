@@ -25,6 +25,7 @@ $(function(){
 /*--------------------Calculate First Div Height--------------------- */
   $('.intro').height($(window).height());
   $('.intro .personal-info').css('top', $(window).height()/2);
+  $('.contact-me').height($(window).height() + 100);
 /*-------------------/Calculate First Div Height--------------------- */
 
 /*-----------------------Start PathJS Router------------------------- */
@@ -45,18 +46,25 @@ $(function(){
 /*-----------------------Scroll Functionality------------------------ */
 
   
-  var ih = $('.intro').height();
-  var amh = $('.about-me').height();
+  var ih    = $('.intro').height();
+  var amh   = $('.about-me').height() + 200;
+  var mwh   = $('.my-work').height() + 17;
+  var cmh   = $('.contact-me').height();
+
   $(window).on('scroll', function(){
     var fromTop = $('body').scrollTop();
 
     /*------------------------Header Stickiness-------------------------- */
     $('.about-me .header').toggleClass('top', (fromTop > ih));
+    $('.my-work .header').toggleClass('top', (fromTop > ih + amh));
+    $('.contact-me .header').toggleClass('top', (fromTop > ih + amh + mwh));
     /*-----------------------/Header Stickiness-------------------------- */
 
     /*-----------------------Active Navigation--------------------------- */
     $('nav .links ul .home').toggleClass('active', (fromTop < ih - 1));
     $('nav .links ul #about-me-nav').toggleClass('active', (fromTop > ih - 1) && (fromTop < ih + amh));
+    $('nav .links ul #my-work-nav').toggleClass('active', (fromTop > ih + amh - 1) && (fromTop < ih + amh + mwh));
+    $('nav .links ul #contact-me-nav').toggleClass('active', (fromTop > ih + amh + mwh - 1));
     /*-----------------------/Active Navigation-------------------------- */
 
   });

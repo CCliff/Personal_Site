@@ -109,6 +109,7 @@ nav ul::after {
   float: left;
   width: 48px;
   min-height: 48px;
+  z-index: 1000;
 
   i {
     font-size: 2em;
@@ -219,6 +220,15 @@ article h2:first-of-type{
   color: #666;
   background-color: $color-5;
   z-index: 2;
+  header{
+    z-index: 2;
+  }
+}
+
+.my-work{
+  .header{
+    z-index: 3;
+  }
 }
 
 .profile-wrapper{
@@ -289,7 +299,7 @@ article h2:first-of-type{
 .level {
   float: left;
   height: 45px;
-  margin: 13px 5px 0px;
+  margin: 13px 5px 0px -50px;
   text-align: right;
   line-height: 45px;
   color: white;
@@ -299,28 +309,58 @@ article h2:first-of-type{
 }
 
 .html5 {
-  width: calc(100% - 65px);
-  background: #E55126;
+  width: calc(100% - 15px);
+  background: #DD3200;
 }
 
 .css3 {
-  width: calc(95% - 65px);
-  background: #0C73B8;
+  width: calc(95% - 15px);
+  background: #31AADD;
 }
 
 .js {
-  width: calc(85% - 65px);
-  background: #E5A228;
+  width: calc(85% - 15px);
+  background: #F0BE26;
 }
 
 .ruby{
-  width: calc(87% - 65px);
+  width: calc(87% - 15px);
   background: #BB180E;
 }
 
 .rwd{
-  width: calc(80% - 65px);
+  width: calc(80% - 15px);
   background: #666;
+}
+
+.contact-me{
+  .header{
+     z-index: 4;
+  }
+}
+
+.contact{
+  width: 90%;
+  height: 65px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  i{
+    font-size: 45px;
+    padding: 10px;
+    width: 45px;
+    position: absolute;
+    left: 0;
+  }
+  p{
+    padding: 0;
+    margin: 0;
+    line-height: 65px;
+  }
+}
+
+.phone{
+  background: orange;
 }
 
 .cf:before,
