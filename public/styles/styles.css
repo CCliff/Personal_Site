@@ -23,10 +23,14 @@ hr:after {
   content: "ll";
   display: inline-block;
   position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
+  top: -0.75em;
+  font-size: 1em;
   padding: 0 0.25em;
   background: white; }
+
+ul {
+  margin: 0;
+  padding: 0; }
 
 nav {
   z-index: 1000;
@@ -44,8 +48,6 @@ nav {
   nav ul {
     position: relative;
     background: #2c697c;
-    margin: 0;
-    padding: 0;
     list-style: none;
     z-index: 1; }
   nav a {
@@ -89,6 +91,9 @@ nav ul::after {
 .show {
   left: 0; }
 
+article h2:first-of-type {
+  padding-top: 75px; }
+
 .intro {
   background: white;
   min-height: 100%;
@@ -131,28 +136,17 @@ nav ul::after {
   padding: 25% 0;
   max-height: 50%; }
 
-.heavy {
-  font-weight: bold; }
-
-.about-me {
-  position: relative;
-  padding: 75px 5px 5px;
-  color: #666;
-  background-color: white;
-  z-index: 2; }
-
 .header {
   position: absolute;
   left: 0;
   background-color: white;
+  border-bottom: 5px solid #2c697c;
   min-height: 2.5em;
   line-height: 3em;
   box-shadow: 0px 0px 10px #666;
-  margin-top: -75px;
   width: 100%;
   z-index: 1; }
   .header h1 {
-    border-bottom: 5px solid #2c697c;
     color: #2c697c;
     margin: 0;
     padding: 0;
@@ -170,3 +164,103 @@ nav ul::after {
   left: 0;
   width: 100%;
   margin: 0; }
+
+.about-me {
+  position: relative;
+  padding: 0px 5px 5px;
+  color: #666;
+  background-color: white;
+  z-index: 2; }
+
+.profile-wrapper {
+  text-align: center; }
+
+.profiles {
+  display: inline-block; }
+  .profiles ul {
+    list-style: none; }
+
+.profile {
+  float: left;
+  text-align: center;
+  margin: 0 20px; }
+
+.skill {
+  width: 100%;
+  height: 65px; }
+
+.badge {
+  float: left;
+  width: 50px;
+  height: 65px;
+  overflow: hidden;
+  position: relative; }
+
+.html5-logo img {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width: 150px; }
+
+.css3-logo img {
+  position: absolute;
+  left: -100px;
+  top: -20px;
+  width: 150px; }
+
+.js-logo img {
+  position: absolute;
+  left: -50px;
+  top: -2px;
+  width: 150px; }
+
+.ruby-logo img {
+  position: absolute;
+  width: 45px;
+  left: 2.5px;
+  top: 12px; }
+
+.rwd-logo img {
+  position: absolute;
+  width: 45px;
+  left: 5px;
+  top: 14px; }
+
+.level {
+  float: left;
+  height: 45px;
+  margin: 13px 5px 0px;
+  text-align: right;
+  line-height: 45px;
+  color: white;
+  padding-right: 5px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 2px; }
+
+.html5 {
+  width: calc(100% - 65px);
+  background: #E55126; }
+
+.css3 {
+  width: calc(95% - 65px);
+  background: #0C73B8; }
+
+.js {
+  width: calc(85% - 65px);
+  background: #E5A228; }
+
+.ruby {
+  width: calc(87% - 65px);
+  background: #BB180E; }
+
+.rwd {
+  width: calc(80% - 65px);
+  background: #666; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }

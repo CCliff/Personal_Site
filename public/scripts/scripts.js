@@ -46,6 +46,7 @@ $(function(){
 
   
   var ih = $('.intro').height();
+  var amh = $('.about-me').height();
   $(window).on('scroll', function(){
     var fromTop = $('body').scrollTop();
 
@@ -55,7 +56,7 @@ $(function(){
 
     /*-----------------------Active Navigation--------------------------- */
     $('nav .links ul .home').toggleClass('active', (fromTop < ih - 1));
-    $('nav .links ul #about-me-nav').toggleClass('active', (fromTop > ih - 1));
+    $('nav .links ul #about-me-nav').toggleClass('active', (fromTop > ih - 1) && (fromTop < ih + amh));
     /*-----------------------/Active Navigation-------------------------- */
 
   });
