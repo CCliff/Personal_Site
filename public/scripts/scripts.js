@@ -46,10 +46,10 @@ $(function(){
 /*-----------------------Scroll Functionality------------------------ */
 
   
-  var ih    = $('.intro').height();
-  var amh   = $('.about-me').height() + 200;
-  var mwh   = $('.my-work').height() + 17;
-  var cmh   = $('.contact-me').height();
+  var ih    = $('.intro').outerHeight();
+  var amh   = $('.about-me').outerHeight();
+  var mwh   = $('.my-work').outerHeight();
+  var cmh   = $('.contact-me').outerHeight();
 
   $(window).on('scroll', function(){
     var fromTop = $('body').scrollTop();
