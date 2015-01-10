@@ -20,7 +20,7 @@ Path.rescue(function(){
 });
 /*--------------------------/Set Router Paths-------------------------- */
 
-$(function(){
+$(window).load(function(){
 
 /*--------------------Calculate First Div Height--------------------- */
   $('.intro').height($(window).height());
