@@ -242,7 +242,8 @@ article h2:first-of-type {
   padding-right: 5px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 2px;
-  transition: width .75s; }
+  transition: width .75s;
+  -webkit-transform: translateZ(-1); }
 
 .html5 {
   width: calc(100% - 15px);
