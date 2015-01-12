@@ -345,12 +345,25 @@ article h2:first-of-type{
   margin: auto;
   text-align: center;
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid $color-2;
+  margin-bottom: 10px;
+  box-shadow: 1px 3px 4px $color-1;
   i{
     font-size: 45px;
     padding: 10px;
     width: 45px;
     position: absolute;
     left: 0;
+    color: white;
+    background-color: $color-2;
+  }
+  .text{
+    width: calc(100% - 65px);
+    float: right;
+    color: $color-1;
   }
   p{
     padding: 0;
@@ -358,10 +371,19 @@ article h2:first-of-type{
     line-height: 65px;
   }
 }
-
-.phone{
-  background: orange;
+.secondary-contact{
+  width: 90%;
+  margin: auto;
+  .small{
+    width: 65px;
+    float: left;
+  }
 }
+
+.small.contact:nth-child(2) {
+  margin: 0px calc(50% - 103.5px);
+}
+
 
 .cf:before,
 .cf:after {
