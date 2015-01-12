@@ -306,6 +306,7 @@ article h2:first-of-type{
   padding-right: 5px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 2px;
+  transition: width .75s;
 }
 
 .html5 {
@@ -331,6 +332,11 @@ article h2:first-of-type{
 .rwd{
   width: calc(80% - 15px);
   background: #666;
+}
+
+.inactive{
+  width: 0;
+  margin-left: -10px;
 }
 
 .contact-me{

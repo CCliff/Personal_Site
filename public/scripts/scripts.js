@@ -67,6 +67,12 @@ $(window).load(function(){
     $('nav .links ul #contact-me-nav').toggleClass('active', (fromTop > ih + amh + mwh - 1));
     /*-----------------------/Active Navigation-------------------------- */
 
+    /*-----------------------Graph Animation------------------------------*/
+    if (fromTop > ih + amh - 1){
+      $('.skill .level').removeClass('inactive');
+    }
+    /*-----------------------/Graph Animation-----------------------------*/
+
   });
 
   /*------------------------Scroll to Header--------------------------- */
