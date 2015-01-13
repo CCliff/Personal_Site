@@ -7,6 +7,10 @@ $color-5: white;
 html{
 }
 
+a:active{
+  background-color: #999;
+}
+
 body{
   color: #666;
   font-family: 'Open Sans', sans-serif;
@@ -86,6 +90,10 @@ nav{
     padding: 15px 20px;
     font-weight: bold;
     transition: background-color .4s;
+      &:active{
+      background-color: rgb(12, 59, 74);
+      transition: none;
+    }
   }
   i {
     margin: 0 10px;
@@ -156,20 +164,21 @@ article h2:first-of-type{
         border-bottom: 3px solid $color-2;
       }
     }
+  };
+  &:after{
+    content: '';
+    background-image: url("/images/background.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    z-index: 0;
   }
 }
 
-.intro::after {
-  content: '';
-  background-image: url("/images/background.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.05;
-  z-index: 0;
-}
+
 
 
 
@@ -246,6 +255,10 @@ article h2:first-of-type{
   float: left;
   text-align: center;
   margin: 0 20px;
+  p{
+    margin:0;
+    color: $color-1;
+  }
 }
 
 .skill{
@@ -307,6 +320,7 @@ article h2:first-of-type{
   border-bottom-right-radius: 10px;
   border-top-right-radius: 2px;
   transition: width .75s;
+  /*create a fake 3d-transformation to add GPU rendering*/
   -webkit-transform: translateZ(-1);
 }
 
@@ -376,6 +390,9 @@ article h2:first-of-type{
     padding: 0;
     margin: 0;
     line-height: 65px;
+  }
+  :active{
+    background-color: #999;
   }
 }
 .secondary-contact{

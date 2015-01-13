@@ -1,3 +1,6 @@
+a:active {
+  background-color: #999; }
+
 body {
   color: #666;
   font-family: 'Open Sans', sans-serif;
@@ -64,6 +67,9 @@ nav {
     padding: 15px 20px;
     font-weight: bold;
     transition: background-color .4s; }
+    nav li:active {
+      background-color: #0c3b4a;
+      transition: none; }
   nav i {
     margin: 0 10px; }
 
@@ -119,17 +125,16 @@ article h2:first-of-type {
         margin: 0;
         padding: 5px 0px 0px;
         border-bottom: 3px solid #3084a3; }
-
-.intro::after {
-  content: '';
-  background-image: url("/images/background.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.05;
-  z-index: 0; }
+  .intro:after {
+    content: '';
+    background-image: url("/images/background.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    z-index: 0; }
 
 .type {
   width: 100%;
@@ -190,6 +195,9 @@ article h2:first-of-type {
   float: left;
   text-align: center;
   margin: 0 20px; }
+  .profile p {
+    margin: 0;
+    color: #2c697c; }
 
 .skill {
   width: 100%;
@@ -243,6 +251,7 @@ article h2:first-of-type {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 2px;
   transition: width .75s;
+  /*create a fake 3d-transformation to add GPU rendering*/
   -webkit-transform: translateZ(-1); }
 
 .html5 {
@@ -300,6 +309,8 @@ article h2:first-of-type {
     padding: 0;
     margin: 0;
     line-height: 65px; }
+  .contact :active {
+    background-color: #999; }
 
 .secondary-contact {
   width: 90%;
