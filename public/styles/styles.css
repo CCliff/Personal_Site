@@ -312,15 +312,21 @@ article h2:first-of-type {
   .contact :active {
     background-color: #999; }
 
-.secondary-contact {
-  width: 90%;
-  margin: auto; }
-  .secondary-contact .small {
-    width: 65px;
-    float: left; }
-
 .small.contact:nth-child(2) {
   margin: 0px calc(50% - 103.5px); }
+
+.footer {
+  color: white;
+  background-color: #2c697c;
+  padding: 20px 10px 50px;
+  text-align: center; }
+  .footer li {
+    list-style: none;
+    float: left;
+    margin-right: 10px; }
+
+.center {
+  text-align: center; }
 
 .cf:before,
 .cf:after {
