@@ -363,14 +363,13 @@ article h2:first-of-type{
 .contact{
   width: 90%;
   height: 65px;
-  margin: auto;
+  margin: 25px auto;
   text-align: center;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
   background-color: white;
   border: 2px solid $color-2;
-  margin-bottom: 10px;
   box-shadow: 1px 3px 4px $color-1;
   i{
     font-size: 45px;
@@ -412,10 +411,14 @@ article h2:first-of-type{
   }
 }
 
-.center{
-  text-align: center;
+.small-contact {
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  margin: 20px auto;
 }
-
 
 .cf:before,
 .cf:after {
