@@ -20,16 +20,15 @@ hr {
   border-top: medium double #2c697c;
   color: #333;
   text-align: center; }
-
-hr:after {
-  color: #2c697c;
-  content: "ll";
-  display: inline-block;
-  position: relative;
-  top: -0.75em;
-  font-size: 1em;
-  padding: 0 0.25em;
-  background: white; }
+  hr:after {
+    color: #2c697c;
+    content: "ll";
+    display: inline-block;
+    position: relative;
+    top: -0.75em;
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: white; }
 
 ul {
   margin: 0;
@@ -72,15 +71,6 @@ nav {
       transition: none; }
   nav i {
     margin: 0 10px; }
-
-nav ul::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1; }
 
 #mob-nav {
   text-align: center;
@@ -128,6 +118,7 @@ article h2:first-of-type {
   .intro:after {
     content: '';
     background-image: url("/images/background.png");
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -327,6 +318,7 @@ article h2:first-of-type {
   .footer:after {
     content: '';
     background-image: url("/images/background.png");
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
