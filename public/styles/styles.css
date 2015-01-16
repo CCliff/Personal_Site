@@ -315,6 +315,7 @@ article h2:first-of-type {
   margin: 0px calc(50% - 103.5px); }
 
 .footer {
+  position: relative;
   color: white;
   background-color: #2c697c;
   padding: 20px 10px 50px;
@@ -323,6 +324,16 @@ article h2:first-of-type {
     list-style: none;
     float: left;
     margin-right: 10px; }
+  .footer:after {
+    content: '';
+    background-image: url("/images/background.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    z-index: 0; }
 
 .small-contact {
   width: 1.5em;
